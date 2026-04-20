@@ -7,3 +7,5 @@ st.write(12345)
 st.write({"Name": "Alice", "Age": 30})
 
 st.write(['list item 1', 'list item 2'])
+
+st.write("**Bold Text** and *Italic Text*")
