@@ -15,5 +15,9 @@ age = st.number_input("Enter your age:",
                       value=25)
 st.write(f"Your age is {age}")
 
+option = st.selectbox("Choose your favorite color:",
+                      ["Red", "Blue", "Green"])
+st.write(f"You selected: {option}")
+
 st.header("Section 2: Markdown")
 st.write("**Bold Text** and *Italic Text*")
