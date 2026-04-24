@@ -24,5 +24,9 @@ if st.button("Click Me"):
 else:
     st.write("Button NOT clicked!")
 
+st.success("Operation completed successfully!")
+st.write("Operation completed successfully!")
+st.header("Operation completed successfully!")
+
 st.header("Section 2: Markdown")
 st.write("**Bold Text** and *Italic Text*")
