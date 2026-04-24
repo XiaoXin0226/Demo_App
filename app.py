@@ -1,31 +1,16 @@
 import streamlit as st
 
-st.title("Welcome to Streamlit!")
+st.title("Streamlit Demo App")
+st.header("User Input Section")
 
-st.header("Section 1: Introduction")
-st.write("Hello, Streamlit!")
-st.write(12345)
-st.write({"Name": "Alice", "Age": 30})
-
-st.write(['list item 1', 'list item 2'])
+st.write("Please provide your details below:")
 
 age = st.number_input("Enter your age:",
                       min_value=0,
                       max_value=120,
                       value=25)
-st.write(f"Your age is {age}")
+color = st.selectbox("Choose your favorite color:",
+                     ["Red", "Blue", "Green"])
 
-option = st.selectbox("Choose your favorite color:",
-                      ["Red", "Blue", "Green"])
-st.write(f"You selected: {option}")
-
-if st.button("Finish?"):
-    st.success("Operation completed successfully!")
-# else:
-#     st.write("Button NOT clicked!")
-
-# st.write("Operation completed successfully!")
-# st.header("Operation completed successfully!")
-
-st.header("Section 2: Markdown")
-st.write("**Bold Text** and *Italic Text*")
+if st.button("Submit"):
+    st.success(f"Thank you! Age: {age}, Favorite Color: {color}")
