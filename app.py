@@ -2,7 +2,7 @@ import streamlit as st
 
 # Title and Header
 
-st.title("📊Retail Business Dashboard")
+st.title("📊 Retail Business Dashboard")
 st.header("Manager Input Section")
 
 
