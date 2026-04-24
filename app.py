@@ -12,7 +12,7 @@ st.write(['list item 1', 'list item 2'])
 age = st.number_input("Enter your age:",
                       min_value=0,
                       max_value=120,
-                      value=25)
+                      value=age+1)
 st.write(f"Your age is {age}")
 
 option = st.selectbox("Choose your favorite color:",
