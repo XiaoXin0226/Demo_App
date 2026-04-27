@@ -17,6 +17,8 @@ operation = st.selectbox("Choose operation", ["Add",
                                               "Divide"])
 
 # main part
+result = None
+
 # Calculate
 if st.button("Calculate"):
     if operation == "Add":
@@ -28,6 +30,7 @@ if st.button("Calculate"):
     elif operation == "Divide":
         result = num1 / num2 if num2 != 0 else "Error: Division by zero"
 
+if result is not None:
     st.success(f"Result: {result:,.3f}")
   
 
@@ -56,4 +59,5 @@ if st.button("Calculate Scientific"):
     elif operation_sci == "Tan":
         result = math.tan(math.radians(value))
 
+if result is not None:
     st.success(f"Result: {result:,.3f}")
