@@ -16,12 +16,9 @@ with st.sidebar:
     )
     
     selected2=option_menu(
-        title_menu = "Menu",
-        choices = ["Home", "About", "Contact"],
-        pictures = ["1-circle-fill",
-                 "2-circle-fill",
-                 "3-circle-fill"],
-        icon_menu = "emoji-smile-fill",
+        menu_title = "Second menu",
+        options = ["1", "2", "3"],
+        menu_icon = "emoji-smile-fill",
         default_index=0,
     )
 
