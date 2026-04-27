@@ -69,6 +69,12 @@ with tab4:
 with st.expander("More Information"):
     st.write("- Additional details on data collection methods.")
     st.write("- Data was collected through surveys and sales reports.")
+    tab_A, tab_B = st.tabs(["Disclaimer", 
+                            "Source",])
+    with tab_A: 
+        st.write("We do not bear any responsibility for  any misuse of our data.")
+    with tab_B:
+        st.write("ISOM3400")
 
 # Dynamic Containers
 placeholder = st.empty()
