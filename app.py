@@ -1,5 +1,8 @@
+# import part
 import streamlit as st
+import math
 
+# function part
 # Title
 st.title("Basic Web Calculator")
 
@@ -13,6 +16,17 @@ operation = st.selectbox("Choose operation", ["Add",
                                               "Multiply", 
                                               "Divide"])
 
+st.header("Scientific Functions")
+operation_sci = st.selectbox("Choose scientific operation", 
+                             ["Square Root", 
+                              "Power", 
+                              "Sin", 
+                              "Cos", 
+                              "Tan"])
+
+value = st.number_input("Enter value", value=0.0)
+
+# main part
 # Calculate
 if st.button("Calculate"):
     if operation == "Add":
@@ -25,22 +39,7 @@ if st.button("Calculate"):
         result = num1 / num2 if num2 != 0 else "Error: Division by zero"
 
     st.success(f"Result: {result:,.3f}")
-
-
-
-
-
-import math
-
-st.header("Scientific Functions")
-operation_sci = st.selectbox("Choose scientific operation", 
-                             ["Square Root", 
-                              "Power", 
-                              "Sin", 
-                              "Cos", 
-                              "Tan"])
-
-value = st.number_input("Enter value", value=0.0)
+  
 
 if operation_sci == "Power":
         power = st.number_input("Enter power", value=2.0)
