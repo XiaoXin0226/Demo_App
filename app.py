@@ -5,7 +5,7 @@ st.title('Hello, Students!')
 st.write('This is your Python Programming course.')
 
 with st.sidebar:
-    selected1=option_menu(
+    selected=option_menu(
         menu_title = "Menu",
         options = ["Home", "About", "Contact"],
         icons = ["1-circle-fill",
