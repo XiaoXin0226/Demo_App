@@ -30,3 +30,12 @@ if selected == "About":
 
 if selected == "Contact":
     st.title(f"Welcome to the {selected} page.")
+
+if selected2 == "1":
+    st.title(f"This is the {selected2} page.")
+
+if selected2 == "2":
+    st.title(f"This is the {selected2} page.")
+
+if selected2 == "3":
+    st.title(f"This is the {selected2} page.")
