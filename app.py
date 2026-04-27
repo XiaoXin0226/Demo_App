@@ -72,9 +72,9 @@ with st.expander("More Information"):
     tab_A, tab_B = st.tabs(["Disclaimer", 
                             "Source",])
     with tab_A: 
-        st.write("We do not bear any responsibility for  any misuse of our data.")
+        st.write("We do not bear any responsibility for any misinformation.")
     with tab_B:
-        st.write("ISOM3400")
+        st.write("ISOM3400, Github, Streamlit")
 
 # Dynamic Containers
 placeholder = st.empty()
