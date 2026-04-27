@@ -63,7 +63,8 @@ with tab4:
         "Q3 2024": "$1.3M",
         "Q4 2024": "$1.5M",
         }
-        
+    for quarter, revenue in market_performances.items():
+        st.write(f"{quarter}: {revenue}")
 
 with st.expander("More Information"):
     st.write("Additional details on data collection methods.")
