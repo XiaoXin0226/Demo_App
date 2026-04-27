@@ -16,14 +16,6 @@ operation = st.selectbox("Choose operation", ["Add",
                                               "Multiply", 
                                               "Divide"])
 
-st.header("Scientific Functions")
-operation_sci = st.selectbox("Choose scientific operation", 
-                             ["Square Root", 
-                              "Power", 
-                              "Sin", 
-                              "Cos", 
-                              "Tan"])
-
 value = st.number_input("Enter value", value=0.0)
 
 # main part
@@ -40,6 +32,14 @@ if st.button("Calculate"):
 
     st.success(f"Result: {result:,.3f}")
   
+
+st.header("Scientific Functions")
+operation_sci = st.selectbox("Choose scientific operation", 
+                             ["Square Root", 
+                              "Power", 
+                              "Sin", 
+                              "Cos", 
+                              "Tan"])
 
 if operation_sci == "Power":
         power = st.number_input("Enter power", value=2.0)
