@@ -45,7 +45,7 @@ with tab2:
         "Quick delivery and excellent support."
     ]
     for feedback in customer_feedback:
-        st.write(f"- {feedback}")
+        st.write(f"- {feedback}")  # - = bullet point
 with tab3:
     st.write("Content for Market Trends")
     market_trends = {
@@ -67,8 +67,8 @@ with tab4:
         st.write(f"{quarter}: {revenue}")
 
 with st.expander("More Information"):
-    st.write("Additional details on data collection methods.")
-    st.write("Data was collected through surveys and sales reports.")
+    st.write("- Additional details on data collection methods.")
+    st.write("- Data was collected through surveys and sales reports.")
 
 # Dynamic Containers
 placeholder = st.empty()
